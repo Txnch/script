@@ -2108,10 +2108,9 @@ if IKAI then
 	
 	library = {}
 	
-	function library:Window(text,text2,text3,logo,keybind)
+	function library:Window(text,text2,text3,keybind)
 		local uihide = false
 		local abc = false
-		local logo = logo or 0
 		local currentpage = ""
 		local keybind = keybind or Enum.KeyCode.RightControl
 		local yoo = string.gsub(tostring(keybind),"Enum.KeyCode.","")
@@ -2154,7 +2153,7 @@ if IKAI then
 		Logo.BackgroundTransparency = 1.000
 		Logo.Position = UDim2.new(0, 14, 0, 2)
 		Logo.Size = UDim2.new(0, 23, 0, 23)
-		Logo.Image = "rbxassetid://"..tostring(logo)
+		
 	
 		local Name = Instance.new("TextLabel")
 		Name.Name = "Name"
@@ -2797,7 +2796,6 @@ if IKAI then
 			IDK.BackgroundTransparency = 1.000
 			IDK.Position = UDim2.new(0, 0, 0, 1)
 			IDK.Size = UDim2.new(0, 20, 0, 20)
-			IDK.Image = "rbxassetid://"..tostring(logo1)
 	
 	
 			local MainFramePage = Instance.new("ScrollingFrame")
