@@ -978,20 +978,20 @@ function CheckQuestBoss()
 					NameMon = "Ice Cream Commanders"
 					CFrameQ = CFrame.new(-821.35913085938, 65.845329284668, -10965.2578125)
 					CFrameMon = CFrame.new(-697.65338134766, 174.48368835449, -11218.38671875)
-				elseif Lv >= 2200 and Lv <= 2250 or SelectMonster == "Ice Cream Commander [Lv. 2150]" then -- Ice Cream Commander
+				elseif Lv >= 2200 and Lv <= 2250 or SelectMonster == "Cookie Crafter [Lv. 2200]" then -- Ice Cream Commander
 					Ms = "Cookie Crafter [Lv. 2200]"
 					NameQuest = "CakeQuest1"
 					QuestLv = 1
 					NameMon = "Cookie Crafters"
 					CFrameQ = CFrame.new(-2017.4874267578125, 36.85276412963867, -12027.53515625)
 					CFrameMon = CFrame.new(-2358.5791015625, 36.85615539550781, -12111.052734375)
-				elseif Lv >= 2225 or SelectMonster == "Cake Guard [Lv. 2225]" then
-					Ms = "Cake Guard [Lv. 2225]"
-					NameQuest = "CakeQuest1"
-					QuestLv = 2
-					NameMon = "Cake Guards"
-					CFrameMon = CFrame.new(-1430.4925537109375, 36.85621643066406, -12322.162109375)
-					CFrameQ = CFrame.new(-2017.4874267578125, 36.85276412963867, -12027.53515625)
+				elseif Lv >= 2250 and Lv <=2275 or SelectMonster == "Baking staff [Lv. 2250]" then
+					Ms = "Baking staff [Lv. 2250]"
+					NameQuest = "CakeQuest2"
+					QuestLv = 1
+					NameMon = "Baking staff"
+					CFrameQ = CFrame.new(-1930.02673, 37.8257256, -12842.2881)
+					CFrameMon = CFrame.new(-1863.75122, 37.7981339, -12828.0576)
 				end
 			end
 		end
@@ -2108,9 +2108,10 @@ if IKAI then
 	
 	library = {}
 	
-	function library:Window(text,text2,text3,keybind)
+	function library:Window(text,text2,text3,logo,keybind)
 		local uihide = false
 		local abc = false
+		local logo = logo or 0
 		local currentpage = ""
 		local keybind = keybind or Enum.KeyCode.RightControl
 		local yoo = string.gsub(tostring(keybind),"Enum.KeyCode.","")
@@ -2153,7 +2154,7 @@ if IKAI then
 		Logo.BackgroundTransparency = 1.000
 		Logo.Position = UDim2.new(0, 14, 0, 2)
 		Logo.Size = UDim2.new(0, 23, 0, 23)
-		
+		Logo.Image = "rbxassetid://"..tostring(logo)
 	
 		local Name = Instance.new("TextLabel")
 		Name.Name = "Name"
@@ -2796,6 +2797,7 @@ if IKAI then
 			IDK.BackgroundTransparency = 1.000
 			IDK.Position = UDim2.new(0, 0, 0, 1)
 			IDK.Size = UDim2.new(0, 20, 0, 20)
+			IDK.Image = "rbxassetid://"..tostring(logo1)
 	
 	
 			local MainFramePage = Instance.new("ScrollingFrame")
