@@ -978,27 +978,20 @@ function CheckQuestBoss()
 					NameMon = "Ice Cream Commanders"
 					CFrameQ = CFrame.new(-821.35913085938, 65.845329284668, -10965.2578125)
 					CFrameMon = CFrame.new(-697.65338134766, 174.48368835449, -11218.38671875)
-				elseif Lv >= 2200 and Lv <= 2250 or SelectMonster == "Cookie Crafter [Lv. 2200]" then -- Ice Cream Commander
+				elseif Lv >= 2200 and Lv <= 2250 or SelectMonster == "Ice Cream Commander [Lv. 2150]" then -- Ice Cream Commander
 					Ms = "Cookie Crafter [Lv. 2200]"
 					NameQuest = "CakeQuest1"
 					QuestLv = 1
 					NameMon = "Cookie Crafters"
 					CFrameQ = CFrame.new(-2017.4874267578125, 36.85276412963867, -12027.53515625)
 					CFrameMon = CFrame.new(-2358.5791015625, 36.85615539550781, -12111.052734375)
-				elseif Lv >= 2250 and Lv. <= 2274 or SelectMonster == "Baking Staff [Lv. 2250]" then 
-					Ms = "Baking Staff [Lv. 2250]"
-					NameQuest = "CakeQuest2"
-					QuestLv = 1
-					NameMon = "Baking Staff"
-					CFrameQ = CFrame.new(-1928.31763, 37.7296638, -12840.626)
-					CFrameMon = CFrame.new(-1818.347900390625, 93.41275787353516, -12887.66015625)
-				elseif Lv >= 2275 or SelectMonster == "Head Baker [Lv. 2275]" then
-					Ms = "Head Baker [Lv. 2275]"
-					NameQuest = "CakeQuest2"
+				elseif Lv >= 2225 or SelectMonster == "Cake Guard [Lv. 2225]" then
+					Ms = "Cake Guard [Lv. 2225]"
+					NameQuest = "CakeQuest1"
 					QuestLv = 2
-					NameMon = "Head Baker"
-					CFrameQ = CFrame.new(-1928.31763, 37.7296638, -12840.626)
-					CFrameMon = CFrame.new(-2234.95923, 53.3980713, -12796.0596)
+					NameMon = "Cake Guards"
+					CFrameMon = CFrame.new(-1430.4925537109375, 36.85621643066406, -12322.162109375)
+					CFrameQ = CFrame.new(-2017.4874267578125, 36.85276412963867, -12027.53515625)
 				end
 			end
 		end
@@ -1742,7 +1735,7 @@ function CheckQuestBoss()
 					CFrameMon = CFrame.new(-1817.9747314453125, 209.5632781982422, -12288.9228515625)
 					SelectMonster = "Cookie Crafter [Lv. 2200]"
 					TelePBoss(CFrameQ)
-				elseif Lv >= 2250 and Lv. <= 2274 or SelectMonster == "Baking Staff [Lv. 2250]" then 
+				elseif Lv >= 2250 or SelectMonster == "Baking Staff [Lv. 2250]" then 
 					Ms = "Baking Staff [Lv. 2250]"
 					NameQuest = "CakeQuest2"
 					QuestLv = 1
@@ -1750,13 +1743,6 @@ function CheckQuestBoss()
 					CFrameQ = CFrame.new(-1928.31763, 37.7296638, -12840.626)
 					CFrameMon = CFrame.new(-1818.347900390625, 93.41275787353516, -12887.66015625)
 					TelePBoss(CFrameQ)
-				elseif Lv >= 2275 or SelectMonster == "Head Baker [Lv. 2275]" then
-					Ms = "Head Baker [Lv. 2275]"
-					NameQuest = "CakeQuest2"
-					QuestLv = 2
-					NameMon = "Head Baker"
-					CFrameQ = CFrame.new(-1928.31763, 37.7296638, -12840.626)
-					CFrameMon = CFrame.new(-2234.95923, 53.3980713, -12796.0596)
 				end
 			end
 		end
@@ -2161,15 +2147,6 @@ if IKAI then
 		TCNR.Name = "TCNR"
 		TCNR.Parent = Top
 	
-		local Logo = Instance.new("ImageLabel")
-		Logo.Name = "Logo"
-		Logo.Parent = Top
-		Logo.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-		Logo.BackgroundTransparency = 1.000
-		Logo.Position = UDim2.new(0, 14, 0, 2)
-		Logo.Size = UDim2.new(0, 23, 0, 23)
-		Logo.Image = "rbxassetid://"..tostring(logo)
-	
 		local Name = Instance.new("TextLabel")
 		Name.Name = "Name"
 		Name.Parent = Top
@@ -2411,7 +2388,6 @@ if IKAI then
 	ImageLabelfps.BackgroundTransparency = 1.000
 	ImageLabelfps.Position = UDim2.new(0.083989636, 0, 0.15545856, 0)
 	ImageLabelfps.Size = UDim2.new(0, 29, 0, 29)
-	ImageLabelfps.Image = "rbxassetid://9606070311"
 	
 	ImageLabeltime.Name = "ImageLabeltime"
 	ImageLabeltime.Parent = Frametime
@@ -2419,7 +2395,6 @@ if IKAI then
 	ImageLabeltime.BackgroundTransparency = 1.000
 	ImageLabeltime.Position = UDim2.new(0.083989636, -9, 0.15545856, 0)
 	ImageLabeltime.Size = UDim2.new(0, 29, 0, 29)
-	ImageLabeltime.Image = "rbxassetid://9606070311"
 	
 	
 	Framefps.MouseEnter:Connect(function()
@@ -2803,15 +2778,6 @@ if IKAI then
 			TabButton.TextColor3 = Color3.fromRGB(225, 225, 225)
 			TabButton.TextSize = 15.000
 			TabButton.TextTransparency = 0.500
-	
-			local IDK = Instance.new("ImageLabel")
-			IDK.Name = "LogoIDK"
-			IDK.Parent = TabButton
-			IDK.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-			IDK.BackgroundTransparency = 1.000
-			IDK.Position = UDim2.new(0, 0, 0, 1)
-			IDK.Size = UDim2.new(0, 20, 0, 20)
-			IDK.Image = "rbxassetid://"..tostring(logo1)
 	
 	
 			local MainFramePage = Instance.new("ScrollingFrame")
@@ -3702,7 +3668,7 @@ end
 
 game.StarterGui:SetCore("SendNotification", {
 	Title = "opew Notification", 
-	Text = "ฟังชั่นที่มีไอคอนนี้สามารถเปิด\nพร้อมฟามเวลได้",
+	Text = "ฟังชั่นที่มีไอคอนนี้สามารถเปิดพร้อมฟามเวลได้",
 	Icon = "http://www.roblox.com/asset/?id=9610159123",
 	Duration = 8
 })
@@ -3717,7 +3683,7 @@ local Island_Tab = win:Tab("Island",[[9606628205]])
 local Setting_Tab = win:Tab("Setting",[[9606644121]])
 local Status_Tab = win:Tab("Status",[[9613645002]])
 local Esp_Tab = win:Tab("ESP",[[9606628205]])
-local Hop_Tab = win:Tab("Hop",[[9608089732]])
+local Hop_Tab = win:Tab("other",[[9608089732]])
 General_Tab:Label("Farm Level")
 
 General_Tab:Toggle("Auto Farm","9606294253",_G.Setting_table.AutoFarm,function(vu)
