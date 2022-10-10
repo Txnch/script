@@ -985,13 +985,20 @@ function CheckQuestBoss()
 					NameMon = "Cookie Crafters"
 					CFrameQ = CFrame.new(-2017.4874267578125, 36.85276412963867, -12027.53515625)
 					CFrameMon = CFrame.new(-2358.5791015625, 36.85615539550781, -12111.052734375)
-				elseif Lv >= 2250 and Lv <=2275 or SelectMonster == "Baking staff [Lv. 2250]" then
-					Ms = "Baking staff [Lv. 2250]"
+				elseif Lv >= 2250 and Lv. <= 2274 or SelectMonster == "Baking Staff [Lv. 2250]" then 
+					Ms = "Baking Staff [Lv. 2250]"
 					NameQuest = "CakeQuest2"
 					QuestLv = 1
-					NameMon = "Baking staff"
-					CFrameQ = CFrame.new(-1930.02673, 37.8257256, -12842.2881)
-					CFrameMon = CFrame.new(-1863.75122, 37.7981339, -12828.0576)
+					NameMon = "Baking Staff"
+					CFrameQ = CFrame.new(-1928.31763, 37.7296638, -12840.626)
+					CFrameMon = CFrame.new(-1818.347900390625, 93.41275787353516, -12887.66015625)
+				elseif Lv >= 2275 or SelectMonster == "Head Baker [Lv. 2275]" then
+					Ms = "Head Baker [Lv. 2275]"
+					NameQuest = "CakeQuest2"
+					QuestLv = 2
+					NameMon = "Head Baker"
+					CFrameQ = CFrame.new(-1928.31763, 37.7296638, -12840.626)
+					CFrameMon = CFrame.new(-2234.95923, 53.3980713, -12796.0596)
 				end
 			end
 		end
@@ -1735,7 +1742,7 @@ function CheckQuestBoss()
 					CFrameMon = CFrame.new(-1817.9747314453125, 209.5632781982422, -12288.9228515625)
 					SelectMonster = "Cookie Crafter [Lv. 2200]"
 					TelePBoss(CFrameQ)
-				elseif Lv >= 2250 or SelectMonster == "Baking Staff [Lv. 2250]" then 
+				elseif Lv >= 2250 and Lv. <= 2274 or SelectMonster == "Baking Staff [Lv. 2250]" then 
 					Ms = "Baking Staff [Lv. 2250]"
 					NameQuest = "CakeQuest2"
 					QuestLv = 1
@@ -1743,6 +1750,13 @@ function CheckQuestBoss()
 					CFrameQ = CFrame.new(-1928.31763, 37.7296638, -12840.626)
 					CFrameMon = CFrame.new(-1818.347900390625, 93.41275787353516, -12887.66015625)
 					TelePBoss(CFrameQ)
+				elseif Lv >= 2275 or SelectMonster == "Head Baker [Lv. 2275]" then
+					Ms = "Head Baker [Lv. 2275]"
+					NameQuest = "CakeQuest2"
+					QuestLv = 2
+					NameMon = "Head Baker"
+					CFrameQ = CFrame.new(-1928.31763, 37.7296638, -12840.626)
+					CFrameMon = CFrame.new(-2234.95923, 53.3980713, -12796.0596)
 				end
 			end
 		end
